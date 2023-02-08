@@ -1,3 +1,4 @@
+#!/bin/sh
 curl -LO https://storage.googleapis.com/minikube/releases/v1.22.0/minikube-linux-amd64
 
 sudo install minikube-linux-amd64 /usr/local/bin/minikube

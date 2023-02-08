@@ -1,3 +1,4 @@
+#!/bin/sh
 # sudo cp apt_repo/sources.list /etc/apt/sources.list
 
 sudo apt update
