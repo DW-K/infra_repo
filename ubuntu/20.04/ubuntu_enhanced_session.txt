@@ -1,3 +1,0 @@
-wget https://raw.githubusercontent.com/Microsoft/linux-vm-tools/master/ubuntu/18.04/install.sh
-
-Set-VM -VMName <your_vm_name> -EnhancedSessionTransportType HvSocket
