@@ -1,6 +1,6 @@
 # Hyper-V에서 내부 ip고정 및 NAT/포트포워딩 방법.
 
-## 1. make_vnet.ps1 파일을 powershell 관리자 권한에서 실행
+## 1. make_vswitch.ps1 파일을 powershell 관리자 권한에서 실행
 
 ### 반드시 1번만 실행
 ### 생성 확인 방법: ncpa.cpl
