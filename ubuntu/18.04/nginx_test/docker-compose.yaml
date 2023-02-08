@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./:/usr/share/nginx/html
+    tty: true
