@@ -6,7 +6,7 @@ deb http://mirror.kakao.com/ubuntu/ focal main restricted
 # deb-src http://mirror.kakao.com/ubuntu/ focal main restricted
 
 ## Major bug fix updates produced after the final release of the
-## distribution.
+## distribution. 
 deb http://mirror.kakao.com/ubuntu/ focal-updates main restricted
 # deb-src http://mirror.kakao.com/ubuntu/ focal-updates main restricted
 
