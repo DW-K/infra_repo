@@ -2,8 +2,8 @@
 
 ## 1. make_vnet.ps1 파일을 powershell 관리자 권한에서 실행
 
-# 반드시 1번만 실행
-# 생성 확인 방법: ncpa.cpl
+### 반드시 1번만 실행
+### 생성 확인 방법: ncpa.cpl
 ![image](https://user-images.githubusercontent.com/28096454/217505648-2145d3a4-c793-457f-a587-bd18648c5b0a.png)
 
 ## 2. 고정 IP 및 네트워크 설정하기
@@ -18,4 +18,4 @@
 ## 5. 포트포워딩 (윈도우)
 Add-NetNatStaticMapping -ExternalIPAddress "0.0.0.0/0" -ExternalPort 80 -Protocol TCP -InternalIPAddress "10.0.0.5" -InternalPort 80 -NatName NAT-Swtich
 
-# ExternalPort와 InternalIPAddress, InternalPort 수정
+### ExternalPort와 InternalIPAddress, InternalPort 수정
