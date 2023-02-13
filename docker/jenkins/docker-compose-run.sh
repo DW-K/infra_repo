@@ -7,7 +7,7 @@
 # ./docker-compose-run.sh remove - jenkins 컨테이너 /이미지/네트워크 /.env 삭제
 #                                - volume용 directory는 삭제하지 않음
 
-readonly JENKINS_HOME_DIR="/home/asd/doc/jenkins"
+readonly JENKINS_HOME_DIR="/mnt/c/Users/pch14/workspace/jenkins/jenkins_volume"
 readonly RUN_COMMAND=$1
 
 #-------------- functions ---------------------------------------------
@@ -82,3 +82,9 @@ execute_command() {
 #----------------------- start -------------------------------------
 check_run_command
 execute_command
+
+# 실행 권한이 없는 경우 
+# chmod u+x docker-compose-run.sh
+
+# This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+# docker logs -f my-jenkins
