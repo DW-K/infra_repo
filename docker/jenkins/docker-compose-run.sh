@@ -1,4 +1,5 @@
 #! /bin/bash
+# https://royleej9.tistory.com/m/entry/Jenkins-docker-docker-compose%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EC%84%A4%EC%B9%98
 # docker image를 사용하여 jenkins를 사용하기위한 스크립트
 # docker-compose 실행을 위한 환경 변수 및 폴더 생성
 # ./docker-compose-run.sh build - jenkins 실행에 필요한 volume 및 .env파일 생성
@@ -82,6 +83,8 @@ execute_command() {
 #----------------------- start -------------------------------------
 check_run_command
 execute_command
+
+# docker-compose-run.sh up
 
 # 실행 권한이 없는 경우 
 # chmod u+x docker-compose-run.sh
