@@ -1,0 +1,16 @@
+version: "3" 
+services:
+  jenkins:
+    container_name: jenkins
+    user: "${UID}:${GID}"                 # volume 폴더 젒근 권한 설정
+    build: .
+    volumes:
+      - $VOLUME_JENKINS_HOME:/var/jenkins_home # jenkins 설치 폴더
+      - /var/run:/var/run:ro              # docker 실행 폴더 공유
+    environment:
+      - TZ=Asia/Seoul                     # jenkins 시간
+    ports:
+      - "10013:8080"                      # jenkins 접속 port
+      - "50000:50000"                     # jenkins agent를 통해 통신 할때 
+    group_add:
+      - ${DOCKER_GROUP}                   # docker 실행을 위한 그룹 추
