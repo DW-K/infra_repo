@@ -1,18 +1,6 @@
 #!/bin/sh
-sudo apt update
 
-sudo apt-get update
-
-sudo apt-get install net-tools
-
-# install docker
-curl https://get.docker.com | sh \
-  && sudo chkconfig docker on \
-  && sudo service docker start
-
-#sudo apt-get install -y docker-ce containerd.io docker-compose
-sudo curl -L https://github.com/docker/compose/releases/download/v2.15.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+sudo sh ./docker_install.sh
 
 # install Nvidia toolkit
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
