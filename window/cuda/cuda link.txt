@@ -1,0 +1,9 @@
+
+# Nvidia driver
+https://www.nvidia.com/Download/index.aspx?lang=kr
+
+# Cuda toolkit
+https://developer.nvidia.com/cuda-toolkit-archive
+
+# Cudnn
+https://developer.nvidia.com/cudnn

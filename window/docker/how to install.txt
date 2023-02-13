@@ -1,0 +1,19 @@
+# Linux용 Windows 하위 시스템 사용
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+# Virtual Machine 기능 사용
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+# Linux커널 최신 업데이트 패키지 다운로드
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+# WSL2를 기본 버전으로 설정
+wsl --set-default-version 2
+
+# microsoft store 에서 ubuntu 설치
+
+# docker 설치
+https://www.docker.com/
+
+# docker 재시작
+Restart-Service -Force -Name *docker*
