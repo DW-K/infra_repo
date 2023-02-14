@@ -13,7 +13,11 @@ if( $found ){
 #[Ports]
 
 #All the ports you want to forward separated by coma
-$ports=@(8000);
+$start = 10011
+$ports=@();
+for ($i = $start; $i -le $start + 8; $i++) {
+  $ports += $i
+}
 
 #[Static ip]
 #You can change the addr to your ip config to listen to a specific address
