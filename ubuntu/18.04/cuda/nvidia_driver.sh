@@ -13,5 +13,3 @@ sudo ubuntu-drivers autoinstall
 # sudo apt install nvidia-driver-450
 
 sudo reboot
-
-nvidia-smi
