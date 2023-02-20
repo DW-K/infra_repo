@@ -14,3 +14,5 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Wi
 Copy ./sshd_config C:\ProgramData\ssh\sshd_config -Force
 
 Restart-Service -Force -Name sshd 
+
+# ps1 에서 실행할건데 /c/뭐시기/bash를 실행해 거기서 ip 받아와

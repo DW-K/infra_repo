@@ -13,7 +13,7 @@ if( $found ){
 #[Ports]
 
 #All the ports you want to forward separated by coma
-$start = 10011
+$start = 10013
 $ports=@();
 for ($i = $start; $i -le $start + 8; $i++) {
   $ports += $i
